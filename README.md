@@ -1,5 +1,4 @@
-# The Official GitHub for the paper Somali Information Retrieval Corpus: Bridging the Gap between Query
-Translation and Dedicated Language Resources.
+# The Official GitHub for the paper Somali Information Retrieval Corpus: Bridging the Gap between Query Translation and Dedicated Language Resources @EMNLP 2023.
 
 # This Repository contains the files of 
 
