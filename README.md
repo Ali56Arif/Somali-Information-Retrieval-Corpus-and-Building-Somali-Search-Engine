@@ -18,4 +18,3 @@ To use this file please first run the Som_index_creator.py, after that, you can
 either run the Som_TF-IDF.py or Som_PRF_IR.py, to see the performance of the system after you run one of these files,
 you can run evaluation.py and change them with open('TF-IDF-Evaluation', 'r') as retrieved_file, this file based on your requirement
 use the TF-IDF-Evaluation text file if you have run the Som_TF-IDF.py or PRF-Evaluation if you run the Som_PRF_IR.py.
-
