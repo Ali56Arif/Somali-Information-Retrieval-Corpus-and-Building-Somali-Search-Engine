@@ -1,4 +1,4 @@
-# The Official GitHub for the paper:---------.
+# The Official GitHub for the paper: Somali Information Retrieval Corpus: Bridging the Gap between Query Translation and Dedicated Language Resources
 
 # This Repository contains the files of 
 
