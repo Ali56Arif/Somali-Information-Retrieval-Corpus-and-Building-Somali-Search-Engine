@@ -1,6 +1,7 @@
-# Official GitHub for the paper: Somali Information Retrieval Corpus: Bridging the Gap between Query Translation and Dedicated Language Resources
+# Somali Information Retrieval Corpus: Bridging the Gap between Query Translation and Dedicated Language Resources
 
-# This Repository contains the files of 
+# This is the official GitHub for the paper: Somali Information Retrieval Corpus: Bridging the Gap between Query Translation and Dedicated Language Resources 
+# The Repository contains:
 
 
 
