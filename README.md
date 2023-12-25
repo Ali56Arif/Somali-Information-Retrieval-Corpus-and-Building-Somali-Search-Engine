@@ -8,7 +8,7 @@
 1) Somali IR Evaluation Corpus: holds the documents, it has 2335 Somali text documents
 2) Judgements: the number of documents judged against the total documents concerning the queries.
 3) queries.txt: holds the queries used 16 in total.
-4) Somali_Stop_Words.txt: the number of stop words identified are in this file
+4) Somali_Stop_Words.txt: the number of Somali stop words identified are in this file
 5) Som_PRF_IR.py: this file contains the Psuedo relevance feedback technique implementation
 6) Som_TF-IDF.py: the TF-IDF python file is in this file
 ===============================================================================================================
