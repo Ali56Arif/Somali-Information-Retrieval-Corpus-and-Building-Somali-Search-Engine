@@ -20,5 +20,6 @@ either run the Som_TF-IDF.py or Som_PRF_IR.py, to see the performance of the sys
 you can run evaluation.py and change them with open('TF-IDF-Evaluation', 'r') as retrieved_file, this file based on your requirement
 use the TF-IDF-Evaluation text file if you have run the Som_TF-IDF.py or PRF-Evaluation if you run the Som_PRF_IR.py.
 
+# Please rename the corpus as Somali_IR_Evaluation_Corpus if you want to create an index by yourself, find the corpus name in the file: som_index_generate.
 
 Will update the Repository, and add more explanations about the use, near time.
