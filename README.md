@@ -17,7 +17,7 @@
 
 
 
-#use
+# How to run
 
 To use this file all you need is to first run either the Som_TF-IDF.py or Som_PRF_IR.py, to see the performance of the system after you run one of these files,
 you can run evaluation.py. This file will deal with two different tasks 1) TF-IDF-Evaluation and 2) PRF-Evaluation. So when you run Som-PRF.py, the method becomes open('PRF-Evaluation', 'r') as retrieved_file: and when you run the Som.TF-IDF.py the method becomes open('TF-IDF-Evaluation', 'r') as retrieved_file:
