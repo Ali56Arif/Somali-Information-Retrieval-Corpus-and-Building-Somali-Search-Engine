@@ -5,7 +5,7 @@
 
 
 
-1) Somali IR Evaluation Corpus: holds the documents, it has 2335 Somali text documents
+1) Somali IR Evaluation Corpus: holds the documents, with 2335 Somali text documents. Rename this file as Somali_IR_Evaluation_Corpus
 2) Judgements: the number of documents judged against the total documents concerning the queries.
 3) queries.txt: holds the queries used 16 in total.
 4) Somali_Stop_Words.txt: the number of Somali stop words identified are in this file
@@ -22,4 +22,4 @@ use the TF-IDF-Evaluation text file if you have run the Som_TF-IDF.py or PRF-Eva
 
 # Please rename the corpus as Somali_IR_Evaluation_Corpus if you want to create an index by yourself, find the corpus name in the file: Som_index_creator.py.
 
-Will update the Repository, and add more explanations about the use, near time.
+
