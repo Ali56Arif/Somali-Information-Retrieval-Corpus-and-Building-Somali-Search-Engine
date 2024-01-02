@@ -1,7 +1,7 @@
 # Somali Information Retrieval Corpus: Bridging the Gap between Query Translation and Dedicated Language Resources
 
 # This is the official GitHub for the paper: Somali Information Retrieval Corpus: Bridging the Gap between Query Translation and Dedicated Language Resources 
-# The Repository contains:
+# In this corpus we have listed the important components as:
 
 
 
@@ -11,15 +11,15 @@
 4) Somali_Stop_Words.txt: the number of Somali stop words identified are in this file
 5) Som_PRF_IR.py: this file contains the Psuedo relevance feedback technique implementation
 6) Som_TF-IDF.py: the TF-IDF python file is in this file
+7) PRF-Evaluation: Results after Som_PRF.py is run.
+8) TF-IDF-Evaluation: holds results after successfully running Som_TF-IDF.py
+9) Som_index_creator.py: if you want to re-run the whole process this file creates the index, you need to run it first.
 ===============================================================================================================
 
 
 
-To use this file please first run the Som_index_creator.py, after that, you can 
-either run the Som_TF-IDF.py or Som_PRF_IR.py, to see the performance of the system after you run one of these files,
-you can run evaluation.py and change them with open('TF-IDF-Evaluation', 'r') as retrieved_file, this file based on your requirement
-use the TF-IDF-Evaluation text file if you have run the Som_TF-IDF.py or PRF-Evaluation if you run the Som_PRF_IR.py.
+To use this file all you need is to first run either the Som_TF-IDF.py or Som_PRF_IR.py, to see the performance of the system after you run one of these files,
+you can run evaluation.py. This file will deal with two different tasks 1) TF-IDF-Evaluation and 2) PRF-Evaluation. So when you run Som-PRF.py, the method becomes open('PRF-Evaluation', 'r') as retrieved_file: and when you run the Som.TF-IDF.py the method becomes open('TF-IDF-Evaluation', 'r') as retrieved_file:
 
-# Please rename the corpus as Somali_IR_Evaluation_Corpus if you want to create an index by yourself, find the corpus name in the file: Som_index_creator.py.
-
+# If you want to re-run the whole process on your own please rename the corpus as Somali_IR_Evaluation_Corpus, and start running from Som_index_creator.py, then follow the previously mentioned steps.
 
