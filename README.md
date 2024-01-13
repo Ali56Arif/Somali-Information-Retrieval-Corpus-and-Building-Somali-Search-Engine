@@ -14,13 +14,16 @@
 7) PRF-Evaluation: Results after Som_PRF.py is run.
 8) TF-IDF-Evaluation: holds results after successfully running Som_TF-IDF.py
 9) Som_index_creator.py: if you want to re-run the whole process this file creates the index, you need to run it first.
+10) evaluation.py: is the file that holds scripts used to evaluate the performance.
 
 
 
-# How to run
+# Usage
 
-To use this file all you need is to first run either the Som_TF-IDF.py or Som_PRF_IR.py, to see the performance of the system after you run one of these files,
-you can run evaluation.py. This file will deal with two different tasks 1) TF-IDF-Evaluation and 2) PRF-Evaluation. So when you run Som-PRF.py, the method becomes open('PRF-Evaluation', 'r') as retrieved_file: and when you run the Som.TF-IDF.py the method becomes open('TF-IDF-Evaluation', 'r') as retrieved_file:
+Please run the Evalaution.py file and exchange the two file names that hold the values of the two models. If you want to 
+use the TF-IDF the file name must be TF-IDF-Evaluation and if you want to use the PRF the file name must be 
+PRF-Evaluation, these two files are inside the Evaluation.py.
 
-# If you want to re-run the whole process on your own please rename the corpus as Somali_IR_Evaluation_Corpus, and start running from Som_index_creator.py, then follow the previously mentioned steps.
+
+
 
