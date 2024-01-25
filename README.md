@@ -24,6 +24,6 @@ Please run the Evalaution.py file and exchange the two file names that hold the 
 use the TF-IDF the file name must be TF-IDF-Evaluation and if you want to use the PRF the file name must be 
 PRF-Evaluation, these two files are inside the Evaluation.py.
 
-
+After downloading please change the folder name to Somali_IR_Evaluation_Corpus
 
 
