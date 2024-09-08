@@ -156,17 +156,6 @@ Open your browser and navigate to http://127.0.0.1:5000/.
 
 Enter your search query in the search box and press "Search" to see the relevant documents.
 
-## Project Structure
-**app.py**: The main application file that contains the Flask web server and handles loading the documents and search queries.
-
-**somali_ir_evaluation_corpus**: This directory contains the Somali text files that are indexed for search.
-
-**search.py**: The script responsible for processing search queries and returning results.
-
-**index_creator.py**: Creates an inverted index from the loaded documents to allow for fast searching.
-
-templates/: Contains the HTML templates (index.html, results.html) used for the web interface.
-
 #### Acknowledgments
 Special thanks to **Abdisalam Badel** for providing the Somali Information Retrieval Corpus. His work on bridging the gap between query translation and dedicated language resources for Somali has been invaluable to this project.
 
