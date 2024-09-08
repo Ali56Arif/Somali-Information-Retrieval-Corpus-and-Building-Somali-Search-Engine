@@ -21,7 +21,7 @@ The Somali Language: Somali is an Afro-Asiatic language belonging to the Cushiti
 
 Given the widespread use of the Somali language, there is a growing need for digital tools that support Somali text processing. This project aims to address one such need by developing a search engine tailored for Somali documents.
 
-###Project Overview
+### Project Overview
 The primary goal of this project is to create a functional search engine for Somali text documents. The main components of the project include:
 
 **Text Processing:**
