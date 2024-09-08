@@ -3,30 +3,31 @@ from collections import defaultdict
 from search import search
 from index_creator import create_inverted_index
 from text_operations import preprocess_text
+import os
 
 app = Flask(__name__)
 
-# Example documents (replace with your actual data)
-documents = {
-    1: "Magaalada Laascaanood ayaa dagaal ka dhacay.",
-    2: "Doorashada Puntland ayaa lagu soo dhoweeyey.",
-    3: "Magaalada Qabridahar waxay leedahay taariikh dheer.",
-    4: "Xuska 18 May ayaa si weyn looga xusay guud ahaan Somaliland.",
-    5: "Macluumaadka jaamacada Jigjiga waxaan ka helay website-ka.",
-    6: "Fatahaada wabiga Shabeelle ayaa saameyn ku yeelatay dadka deegaanka.",
-    7: "Xidhiidhka Shiinaha iyo Africa wuxuu soo bilowday muddo dheer.",
-    8: "Ciyaaryahanka ugu fiican kubadda cagta adduunka waa Lionel Messi.",
-    9: "Taariikhda heesaha fanaanka qaaday heesta 'Baladweyne Allahayow'.",
-    10: "Xaalada deegaanka Tigreega ayaa weli kacsan.",
-    11: "1-da Luulyo waa maalinta xorriyadda Soomaaliya.",
-    12: "Gabayada abwaan Gaashaandhigga waa kuwa ugu caansan.",
-    13: "Doonta Titan ee aaday burburka Titanic.",
-    14: "Sidee lagu doortay tirsiga 24 saac ee maalinta.",
-    15: "Suuqa Jigjiga ee gubtay ayaa dib loo dhisayaa.",
-    16: "Sacuudiga iyo arimaha Xajka ayaa si weyn loo hadal hayaa."
-}
+# Function to read multiple text files and load the content into the documents dictionary
+def load_documents():
+    documents = {}
+    base_path = 'D:/MASTER/IR/somali_ir_evaluation_corpus/'  # Update with your path
+    files = ['Som-0001.txt', 'Som-0002.txt', 'Som-0003.txt', 'Som-0004.txt', 'Som-0005.txt', 'Som-0006.txt', 'Som-0007.txt', 'Som-0008.txt', 'Som-0009.txt', 'Som-0010.txt', 'Som-0011.txt', 'Som-0012.txt', 'Som-0013.txt', 'Som-0014.txt', 'Som-0015.txt', 'Som-0016.txt']  # List of your text files
+    for i, file_name in enumerate(files, 1):
+        try:
+            with open(os.path.join(base_path, file_name), 'r', encoding='utf-8') as file:
+                content = file.read()
+                documents[i] = content.strip()
+        except UnicodeDecodeError:
+            # Try a different encoding if utf-8 fails
+            with open(os.path.join(base_path, file_name), 'r', encoding='ISO-8859-1', errors='ignore') as file:
+                content = file.read()
+                documents[i] = content.strip()
+    return documents
 
-# Create the inverted index
+# Load documents from text files
+documents = load_documents()
+
+# Create the inverted index using the loaded documents
 inverted_index = create_inverted_index(documents)
 
 @app.route('/')
